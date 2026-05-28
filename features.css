@@ -1,0 +1,365 @@
+.view-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--shadow-soft);
+}
+
+.view-tabs button {
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 850;
+}
+
+.view-tabs button:hover {
+  background: rgba(15, 118, 110, 0.08);
+  color: var(--accent-dark);
+}
+
+.view-tabs button.is-active {
+  border-color: rgba(15, 118, 110, 0.28);
+  background: #fff;
+  color: var(--accent-dark);
+  box-shadow: var(--shadow-soft);
+}
+
+.view-tabs span {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  border-radius: 999px;
+  background: rgba(37, 92, 153, 0.1);
+  color: var(--blue);
+  font-size: 0.72rem;
+}
+
+.feature-panel {
+  min-width: 0;
+}
+
+.tool-panel {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow);
+}
+
+.tool-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.tool-head h2 {
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+
+.quiet-note {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.preset-row,
+.tool-actions-row,
+.row-actions,
+.company-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.preset-row {
+  margin-bottom: 12px;
+}
+
+.preset-row button,
+.soft-action,
+.row-actions button,
+.remove-mini {
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #f7faf8;
+  color: var(--ink);
+  font-size: 0.8rem;
+  font-weight: 850;
+}
+
+.preset-row button:hover,
+.soft-action:hover,
+.row-actions button:hover,
+.remove-mini:hover {
+  border-color: rgba(15, 118, 110, 0.34);
+  background: rgba(15, 118, 110, 0.09);
+}
+
+.primary-action {
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 900;
+}
+
+.screen-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.field span:first-child,
+.check-field span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 850;
+}
+
+.input-with-unit {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: #fbfdfc;
+}
+
+.input-with-unit input,
+.field select {
+  width: 100%;
+  min-height: 38px;
+  border: 0;
+  border-radius: 6px;
+  padding: 0 10px;
+  background: transparent;
+  color: var(--ink);
+  outline: none;
+}
+
+.input-with-unit em {
+  padding: 0 10px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.field select {
+  border: 1px solid var(--line-strong);
+  background: #fbfdfc;
+}
+
+.check-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fbfdfc;
+}
+
+.tool-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tool-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfdfc;
+}
+
+.tool-row-main {
+  min-width: 0;
+}
+
+.plain-company {
+  display: grid;
+  gap: 3px;
+  max-width: 100%;
+  background: transparent;
+  color: var(--ink);
+  padding: 0;
+  text-align: left;
+}
+
+.plain-company strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.92rem;
+}
+
+.plain-company span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 750;
+}
+
+.compact-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 9px;
+}
+
+.compact-metrics span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 26px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.76rem;
+  font-weight: 850;
+}
+
+.compact-metrics em {
+  color: var(--muted);
+  font-style: normal;
+}
+
+.empty-panel {
+  padding: 28px 12px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 8px;
+  background: #fbfdfc;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.company-actions {
+  justify-content: flex-end;
+}
+
+.company-actions #source-link {
+  flex: 0 0 auto;
+}
+
+.compare-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfdfc;
+}
+
+.compare-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.compare-table th:first-child,
+.compare-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #fbfdfc;
+  text-align: left;
+}
+
+.compare-table thead th {
+  vertical-align: top;
+  background: #f4f7f6;
+}
+
+.compare-table tbody tr:last-child th,
+.compare-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.remove-mini {
+  display: block;
+  min-height: 26px;
+  margin-top: 7px;
+  padding: 0 8px;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .screen-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tool-row {
+    grid-template-columns: 1fr;
+  }
+
+  .row-actions,
+  .company-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .view-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-color: #a9b9b4 transparent;
+    scrollbar-width: thin;
+  }
+
+  .view-tabs button {
+    flex: 0 0 auto;
+  }
+
+  .screen-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-head {
+    flex-direction: column;
+  }
+
+  .tool-panel {
+    padding: 12px;
+  }
+}
