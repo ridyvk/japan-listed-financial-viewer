@@ -1,5 +1,5 @@
-const CACHE_NAME = "jp-financial-viewer-v1";
-const APP_SHELL = ["/", "/index.html", "/styles.css", "/app.js", "/manifest.json", "/assets/icon.svg"];
+const CACHE_NAME = "jp-financial-viewer-v2";
+const APP_SHELL = ["/", "/styles.css", "/app.js", "/manifest.json", "/assets/icon.svg"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));
@@ -21,8 +21,21 @@ self.addEventListener("fetch", (event) => {
     return;
   }
   if (request.mode === "navigate") {
-    event.respondWith(fetch(request).catch(() => caches.match("/index.html")));
+    event.respondWith(fetch(request).catch(() => caches.match("/")));
     return;
   }
-  event.respondWith(caches.match(request).then((cached) => cached || fetch(request)));
+  event.respondWith(
+    caches.match(request).then((cached) => {
+      const fresh = fetch(request)
+        .then((response) => {
+          if (response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+          }
+          return response;
+        })
+        .catch(() => cached);
+      return cached || fresh;
+    })
+  );
 });
