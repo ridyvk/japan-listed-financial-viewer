@@ -1,0 +1,22 @@
+{
+  "name": "日本上場企業 財務指標ビューア",
+  "short_name": "財務指標",
+  "description": "日本の上場企業を名前順に探し、ROA、ROIC、PEGレシオ、ネットキャッシュ比率などの財務指標を確認できます。",
+  "lang": "ja",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "any",
+  "background_color": "#f5f7f4",
+  "theme_color": "#0f766e",
+  "categories": ["finance", "business", "productivity"],
+  "icons": [
+    {
+      "src": "/assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
