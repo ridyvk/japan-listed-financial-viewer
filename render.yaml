@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: japan-listed-financial-viewer
+    env: node
+    plan: free
+    region: singapore
+    buildCommand: ""
+    startCommand: "node server.js"
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20
