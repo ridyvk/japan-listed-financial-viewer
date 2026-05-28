@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="財務指標アプリ">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="64" x2="440" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#133c35" />
+      <stop offset="0.55" stop-color="#0f766e" />
+      <stop offset="1" stop-color="#255c99" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)" />
+  <path d="M96 342h320" fill="none" stroke="#d7fff6" stroke-width="22" stroke-linecap="round" opacity="0.26" />
+  <path d="M112 314l72-78 62 44 92-126 62 52" fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="112" cy="314" r="18" fill="#ffffff" />
+  <circle cx="184" cy="236" r="18" fill="#ffffff" />
+  <circle cx="246" cy="280" r="18" fill="#ffffff" />
+  <circle cx="338" cy="154" r="18" fill="#ffffff" />
+  <circle cx="400" cy="206" r="18" fill="#ffffff" />
+  <text x="256" y="405" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="104" font-weight="800" fill="#ffffff">JP</text>
+</svg>
