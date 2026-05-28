@@ -25,3 +25,5 @@ Renderにデプロイする場合は `render.yaml` を使います。RuntimeはN
 ## 公開状態
 
 Render公開URL: https://japan-listed-financial-viewer.onrender.com/
+
+Last Render refresh: 2026-05-28 13:44 JST
