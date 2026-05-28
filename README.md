@@ -21,3 +21,7 @@ npm start
 ## デプロイ
 
 Renderにデプロイする場合は `render.yaml` を使います。RuntimeはNode、Start Commandは `node server.js` です。
+
+## 公開状態
+
+Render公開URL: https://japan-listed-financial-viewer.onrender.com/
